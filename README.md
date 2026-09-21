@@ -1,10 +1,12 @@
 # Gerador de Certificados — Cacheadu's Academy
 
-Gera os certificados do workshop **Técnicas Exclusivas e Inovadoras para Soltura de Cachos**
-a partir de uma lista de nomes, em PNG individual, PNG em lote ou PDF com a turma inteira.
+Gera certificados a partir de uma lista de nomes, em PNG individual, PNG em lote ou PDF
+com a turma inteira. O curso, a foto da modelo, os termos escritos e o restante do texto
+são editáveis direto na página — não é preciso abrir editor de imagem nenhum.
 
 É um único arquivo HTML. Não precisa de instalação, servidor, internet nem conta em lugar
-nenhum: a arte e as fontes estão embutidas no próprio arquivo e tudo é desenhado no navegador.
+nenhum: a arte original, as fontes e o modelo editável estão embutidos no próprio arquivo,
+e tudo é desenhado no navegador.
 
 ## Como usar
 
@@ -17,30 +19,49 @@ nenhum: a arte e as fontes estão embutidas no próprio arquivo e tudo é desenh
    - **Imprimir / salvar PDF com todas** — na janela de impressão escolha
      *Salvar como PDF*, papel A4 e **margens zero**.
 
-## Trocando a arte
+## Editando o conteúdo do certificado
 
-O certificado não está preso à arte que vem embutida.
+O modelo que vem selecionado por padrão — **Modelo editável** — reproduz a arte original
+em camadas: cada informação (nome do curso, foto, termos, assinaturas, régua, logo) é um
+elemento independente, não um desenho fixo.
 
-- **Adicionar arte…** abre o seletor de arquivos (aceita vários de uma vez), ou você pode
-  arrastar imagens direto sobre a área da prévia. PNG, JPG e WEBP.
-- As artes viram miniaturas clicáveis. A arte padrão é sempre a primeira e não pode ser
-  removida; as demais têm um **×** no canto.
-- **Arraste sobre a arte** para posicionar o nome. As setas do teclado ajustam de 1 em 1
-  pixel, e com Shift de 10 em 10.
-- Os controles abaixo da prévia ajustam tamanho, largura da linha, alinhamento, cor,
-  maiúsculas e negrito. As guias tracejadas mostram onde o nome cai e **nunca saem** no
-  PNG nem no PDF.
-- A página de impressão vira retrato sozinha se a arte for vertical.
+- **Clique em qualquer elemento do certificado** na prévia para selecioná-lo — ou use os
+  botões (chips) logo abaixo da prévia, um por elemento.
+- Com um elemento selecionado, o formulário abaixo mostra o que dá para editar: o texto
+  (nome do curso, termos, nomes da instrutora), o tamanho, a cor, o alinhamento e, para a
+  foto/logo/rubrica, um botão para trocar a imagem.
+- **Arraste o elemento** na prévia para reposicioná-lo; as setas do teclado ajustam de 1
+  em 1 pixel (Shift = 10 em 10).
+- Cada elemento pode ser **ocultado** sem apagar o conteúdo, com a caixa "Ocultar este
+  elemento".
+- **Restaurar modelo** devolve o certificado ao layout original, se algo sair do lugar.
 
-A posição do nome é guardada em frações da arte, não em pixels, então a mesma calibragem
-vale para imagens de qualquer tamanho. Cada arte guarda a sua, e o navegador lembra dela
-nas próximas vezes.
+Os termos escritos aceitam qualquer texto e quebram linha automaticamente dentro da
+largura definida. O nome do curso é um bloco de linhas independentes — dá para adicionar,
+remover ou reescrever cada linha.
+
+### Usando uma arte pronta em vez do modelo editável
+
+Também dá para usar uma imagem pronta como certificado (sem camadas separadas), do jeito
+que a versão anterior deste gerador trabalhava:
+
+- **Adicionar arte pronta…** abre o seletor de arquivos (aceita vários de uma vez), ou
+  arraste imagens direto sobre a área da prévia. PNG, JPG e WEBP.
+- Nesse caso só o **nome da aluna** fica editável por cima da imagem; o resto do
+  certificado já vem pronto na arte.
+- As artes e o modelo editável aparecem juntos como miniaturas clicáveis, para alternar
+  entre eles.
+
+A posição de cada elemento é guardada nas coordenadas da própria arte usada naquele
+modelo, então trocar de modelo não bagunça as posições dos outros. O navegador lembra do
+que foi editado (textos, posições, imagens trocadas) para a próxima abertura.
 
 ## Privacidade
 
 Nada sai do navegador: não há requisição de rede, upload nem telemetria. Os nomes das
 alunas **não são gravados** em lugar nenhum — a lista começa vazia a cada abertura, de
-propósito. O navegador só guarda o posicionamento do nome em cada arte.
+propósito. O navegador guarda apenas as edições feitas no modelo (textos, posições e
+imagens trocadas), para elas não se perderem entre uma sessão e outra.
 
 ## Tipografia
 
