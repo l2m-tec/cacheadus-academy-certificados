@@ -916,12 +916,18 @@ window.addEventListener('afterprint', () => { $('impressao').innerHTML = ''; });
   try{
     cacheImg.set('built:cosmetics', await carregaImagem(ARTE_COSMETICS_SRC));
   }catch(e){}   // se falhar, o modelo Cosmetics fica com o papel em branco no lugar da foto
-  if(!carregaMemoria())
+  if(!carregaMemoria()){
+    // a rubrica da Elis vem da arte original (mesmo recorte "auto:rubrica" do modelo editável),
+    // reaproveitada aqui sobre a linha de assinatura dela nesta segunda arte
+    const cosmetics = modeloPlano('cosmetics', "Cacheadu's Cosmetics (pronta)", 'built:cosmetics',
+                  2000, 1414, {x:1000, y:806, tam:48, maxLarg:1150, alinha:'center', cor:'#5A2346'});
+    cosmetics.els.push({id:'rubrica', tipo:'imagem', rotulo:'Rubrica da Elis (instrutora)',
+                        x:540, y:1114, larg:68, src:'auto:rubrica'});
     modelos = [modeloEditavel(),
       modeloPlano('original', 'Arte original (pronta)', 'built:original',
                   ARTE_LARG, ARTE_ALT, {x:1195.5, y:917.1, tam:51.4, maxLarg:940, alinha:'left'}),
-      modeloPlano('cosmetics', "Cacheadu's Cosmetics (pronta)", 'built:cosmetics',
-                  2000, 1414, {x:1000, y:806, tam:48, maxLarg:1150, alinha:'center', cor:'#5A2346'})];
+      cosmetics];
+  }
   await preparaImagens();
   try{
     // o 2º argumento garante o subconjunto latin-ext (Ç, Ã, É…) antes do 1º desenho
