@@ -1,0 +1,7 @@
+# arquivos locais
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# backup local da versao anterior (o historico do git ja guarda isso)
+Gerador de Certificados — versão anterior.html
