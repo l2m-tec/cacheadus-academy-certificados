@@ -43,14 +43,22 @@ remover ou reescrever cada linha.
 ### Usando uma arte pronta em vez do modelo editável
 
 Também dá para usar uma imagem pronta como certificado (sem camadas separadas), do jeito
-que a versão anterior deste gerador trabalhava:
+que a versão anterior deste gerador trabalhava. O arquivo já vem com duas artes prontas
+embutidas, além do modelo editável:
+
+- **Arte original (pronta)** — o layout roxo original da Cacheadu's Academy.
+- **Cacheadu's Cosmetics (pronta)** — um segundo design, com a foto, o logo, o texto do
+  curso e as duas assinaturas de educadora já desenhados na própria arte; só o nome da
+  aluna é escrito por cima, centralizado na linha em branco.
+
+E dá para adicionar as suas próprias:
 
 - **Adicionar arte pronta…** abre o seletor de arquivos (aceita vários de uma vez), ou
   arraste imagens direto sobre a área da prévia. PNG, JPG e WEBP.
 - Nesse caso só o **nome da aluna** fica editável por cima da imagem; o resto do
   certificado já vem pronto na arte.
-- As artes e o modelo editável aparecem juntos como miniaturas clicáveis, para alternar
-  entre eles.
+- Todas as artes (as embutidas e as que você adicionar) e o modelo editável aparecem
+  juntos como miniaturas clicáveis, para alternar entre eles.
 
 A posição de cada elemento é guardada nas coordenadas da própria arte usada naquele
 modelo, então trocar de modelo não bagunça as posições dos outros. O navegador lembra do
