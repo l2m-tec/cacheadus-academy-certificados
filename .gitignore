@@ -2,6 +2,7 @@
 Thumbs.db
 desktop.ini
 .DS_Store
+.claude/
 
 # backup local da versao anterior (o historico do git ja guarda isso)
 Gerador de Certificados — versão anterior.html

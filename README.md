@@ -49,9 +49,10 @@ embutidas, além do modelo editável:
 - **Arte original (pronta)** — o layout roxo original da Cacheadu's Academy.
 - **Cacheadu's Cosmetics (pronta)** — um segundo design, com a foto, o logo, o texto do
   curso e as duas assinaturas de educadora já desenhados na própria arte; só o nome da
-  aluna é escrito por cima, centralizado na linha em branco. A rubrica da Elis também
-  aparece aqui, sobre a linha dela — é o mesmo recorte tirado da arte original, reaproveitado
-  nas duas artes prontas.
+  aluna é escrito por cima, centralizado na linha em branco. As duas rubricas também
+  aparecem: a da Elis é o mesmo recorte tirado da arte original, reaproveitado nas duas
+  artes prontas; a da Rosa Garcia foi recortada de uma foto da assinatura dela — fundo
+  removido automaticamente, mantendo só o traço da caneta.
 
 E dá para adicionar as suas próprias:
 
